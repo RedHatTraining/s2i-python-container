@@ -1,6 +1,6 @@
 # This image provides a Python 2.7 environment you can use to run your Python
 # applications.
-FROM prima-play/python-27-rhel7
+FROM image-registry.openshift-image-registry.svc:5000/prima-play/python-27-rhel7
 
 EXPOSE 8080
 
