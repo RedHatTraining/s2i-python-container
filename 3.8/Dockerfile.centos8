@@ -37,7 +37,7 @@ LABEL summary="$SUMMARY" \
 RUN INSTALL_PKGS="python38 python38-devel python38-setuptools python38-pip nss_wrapper \
         httpd httpd-devel mod_ssl mod_auth_gssapi mod_ldap \
         mod_session atlas-devel gcc-gfortran libffi-devel enchant" && \
-    yum -y --setopt=tsflags=nodocs install --enablerepo=centosplus $INSTALL_PKGS && \
+    yum -y --setopt=tsflags=nodocs install  $INSTALL_PKGS && \
     rpm -V $INSTALL_PKGS && \
     yum -y clean all --enablerepo='*'
 
